@@ -10,10 +10,14 @@ slack_token = os.getenv("SLACK_TOKEN")
 # Start Slack session
 client = WebClient(token=slack_token)
 
+# Read URL from url.txt
+with open('url.txt', 'r') as f:
+    url = f.readline()
+
 try:
     response = client.chat_postMessage(
         channel="generale",
-        text="One hour left for chosing the food"
+        text=":warning: One hour left for chosing the food for next Wednesday! :warning: \n Link: " + url
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
