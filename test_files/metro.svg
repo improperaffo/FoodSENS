@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
-    <switch transform="translate(-6.6 -6.2)">
-        <g>
-            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
-            <path d="M33.2 16H17v15.1h2.8L17 34h2.2l2.8-2.9h6.4l2.8 2.9h2.2l-2.8-2.9h2.8V16zM19.5 29.8c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9c-.1.6-.4.9-.9.9zm11.3 0c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9c-.1.6-.4.9-.9.9zm1.1-3H18.4v-7.2h13.5v7.2zm0-7.9H18.4v-1.5h13.5v1.5z" style="fill:#e42022"/>
-        </g>
-    </switch>
-</svg>

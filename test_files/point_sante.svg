@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
-    <switch transform="translate(-6.6 -6.2)">
-        <g>
-            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
-            <path d="M35.7 24.7c0 5.8-4.7 10.5-10.5 10.5s-10.5-4.7-10.5-10.5 4.7-10.5 10.5-10.5 10.5 4.6 10.5 10.5z" style="fill:none;stroke:#e42022;stroke-linecap:round;stroke-linejoin:round"/>
-            <path d="M27 22.8v-4.2h-3.7v4.2h-4.2v3.7h4.2v4.2H27v-4.2h4.2v-3.7H27z" style="fill:#e42022"/>
-        </g>
-    </switch>
-</svg>
