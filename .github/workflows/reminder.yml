@@ -17,9 +17,6 @@ jobs:
       run: pip install -r requirements.txt
     - name: Download URL
       uses: actions/download-artifact@v4
-      with:
-        name: url.txt
-        path: ./
     - name: Use URL
       run: |
         URL=$(cat url.txt)
