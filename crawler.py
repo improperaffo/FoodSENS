@@ -43,13 +43,12 @@ with open('template.json', 'r') as f:
 new_values = []
 
 # For each 'menu-content' element, find the <b> tag, get the next sibling and write its text to the file
-with open('/home/sens/FoodLab_menu/options.txt', 'w') as file:
-    for item in menu_items:
-        b_tag = item.find('b')
-        if b_tag is not None:
-            descr = b_tag.contents[0]
-            if descr is not None:
-                new_values.append(descr.strip().replace('\n', ' '))
+for item in menu_items:
+    b_tag = item.find('b')
+    if b_tag is not None:
+        descr = b_tag.contents[0]
+        if descr is not None:
+            new_values.append(descr.strip().replace('\n', ' '))
 
 
 
