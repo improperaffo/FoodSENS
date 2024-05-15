@@ -19,6 +19,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: url.txt
+        path: ./
     - name: Use URL
       run: |
         URL=$(cat url.txt)
