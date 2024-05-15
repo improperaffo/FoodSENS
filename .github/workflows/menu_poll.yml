@@ -1,0 +1,16 @@
+name: Get the menu and create poll
+on:
+  # schedule:
+  #   - cron: '0 12 * * 5'
+  push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run script
+      run: python3 crawler.py
+      env:
+        STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
