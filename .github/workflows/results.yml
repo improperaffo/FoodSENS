@@ -1,8 +1,8 @@
 name: Give the results
 on:
-#   schedule:
-#     - cron: '0 12 * * 1'
-  push
+  schedule:
+    - cron: '0 12 * * 1'
+#   push
 jobs:
   build:
     runs-on: ubuntu-latest
