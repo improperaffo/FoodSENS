@@ -1,0 +1,40 @@
+name: Get the menu and create poll
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  # push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Download URL
+      uses: actions/download-artifact@v2
+      with:
+        name: url  
+    - name: Use URL
+      run: |
+        URL=$(cat url.txt)
+        echo "URL is $URL"
+    - name: Downaload menu
+      uses: actions/download-artifact@v2
+      with:
+        name: menu
+    - name: Use menu
+      run: |
+        MENU=$(cat menu.txt)
+        echo "MENU is $MENU"
+    - name: Run script
+      run: python3 results.py
+      env:
+        STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
+        SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}

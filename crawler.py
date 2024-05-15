@@ -43,14 +43,14 @@ with open('template.json', 'r') as f:
 new_values = []
 
 # For each 'menu-content' element, find the <b> tag, get the next sibling and write its text to the file
-for item in menu_items:
-    b_tag = item.find('b')
-    if b_tag is not None:
-        descr = b_tag.contents[0]
-        if descr is not None:
-            new_values.append(descr.strip().replace('\n', ' '))
-
-
+with open('menu.txt', 'w') as f:
+    for item in menu_items:
+        b_tag = item.find('b')
+        if b_tag is not None:
+            descr = b_tag.contents[0]
+            if descr is not None:
+                new_values.append(descr.strip().replace('\n', ' '))
+                f.write(descr.replace('\n', ' ') + '\n')
 
 # For each poll option, change the value
 for i, option in enumerate(data['poll_options'][:-1]):
