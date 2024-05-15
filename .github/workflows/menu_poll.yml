@@ -1,8 +1,8 @@
 name: Get the menu and create poll
 on:
-  schedule:
-    - cron: '0 12 * * 5'
-  # push
+  # schedule:
+    # - cron: '0 12 * * 5'
+  push
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,12 +23,12 @@ jobs:
         STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
     - name: Upload URL
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: url
         path: url.txt
     - name: Save menu
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       with:
         name: menu
         path: menu.txt
