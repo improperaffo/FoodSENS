@@ -18,7 +18,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Download URL
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: url  
     - name: Use URL
@@ -26,7 +26,7 @@ jobs:
         URL=$(cat url.txt)
         echo "URL is $URL"
     - name: Downaload menu
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: menu
     - name: Use menu
