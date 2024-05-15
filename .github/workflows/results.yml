@@ -1,4 +1,4 @@
-name: Get the menu and create poll
+name: Give the results
 on:
 #   schedule:
 #     - cron: '0 12 * * 1'
