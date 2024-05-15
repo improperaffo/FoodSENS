@@ -1,1 +1,8 @@
-requests bs4 datetime os json http.client slack_sdk slack_sdk.errors 
+requests
+bs4
+datetime
+os
+json
+http.client
+slack_sdk
+slack_sdk.errors 
