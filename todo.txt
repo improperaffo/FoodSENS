@@ -1,0 +1,5 @@
+# Save URL of poll in a file
+# Create script for getting the results
+# Create cron
+
+# Migrate to github

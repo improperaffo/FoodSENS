@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Calque_1" x="0" y="0" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <style>
+        .st1,.st2{stroke:#e42321;stroke-linejoin:round;stroke-miterlimit:10}.st1{stroke-width:1.1703}.st2{fill:none;stroke-linecap:round}
+    </style>
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <g id="g30_00000096022447033237171110000001474542678051442066_" transform="scale(.6702 .67138)">
+                <circle id="circle14_00000041286972512924349590000012895224436741230764_" cx="48.4" cy="43.9" r=".9" class="st1"/>
+                <circle id="circle16_00000039837194572733897650000007727815174304277126_" cx="26.4" cy="43.9" r=".9" class="st1"/>
+                <path id="line18_00000058575796090413163700000005368515263124692608_" d="m36.7 43.9-5.2-12.7" class="st2"/>
+                <path id="polyline20_00000108993822578234990670000011863051299458182333_" d="m48.4 43.9-5.2-12.7h3.5" class="st2"/>
+                <path id="line22_00000090273828512637241630000008488685827949867703_" d="M30.2 31.2h4.3" class="st2"/>
+                <path id="polyline28_00000182507314002876566700000008699380837418485133_" d="m44.2 34-7.5 9.9H25.9l6.9-9.9h11.4" class="st2"/>
+            </g>
+            <circle cx="32.5" cy="29.5" r="4" class="st2"/>
+            <circle cx="17.7" cy="29.5" r="4" class="st2"/>
+            <path id="polyline32" d="m12.6 19.5 12.5-5.8 12.5 5.8" class="st2"/>
+        </g>
+    </switch>
+</svg>

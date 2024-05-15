@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Calque_1" x="0" y="0" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <style>
+        .st1,.st2{stroke-linejoin:round;stroke:#e42321;stroke-miterlimit:10}.st1{stroke-width:1.1703}.st2{fill:none;stroke-linecap:round}
+    </style>
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <g id="g30_00000139981138629823493730000015099550979469987737_" transform="scale(.6702 .67138)">
+                <circle id="circle14_00000018959451534114046680000010401157373911937448_" cx="50.6" cy="34.6" r="1.1" class="st1"/>
+                <circle id="circle16_00000113312561390530729270000017069642721821782425_" cx="24.2" cy="34.6" r="1.1" class="st1"/>
+                <path id="line18_00000145036406564898446850000011006977279662325433_" d="m36.5 34.6-6.3-15.2" class="st2"/>
+                <path id="polyline20_00000075843069076854953360000004364152705517916298_" d="m50.6 34.6-6.3-15.2h4.2" class="st2"/>
+                <path id="line22_00000060726583309502882960000000065392137898230151_" d="M28.7 19.4h5.2" class="st2"/>
+                <path id="polyline28_00000155860405943972375590000018413641453846037675_" d="m45.5 22.7-9 11.9H23.6l8.3-11.9h13.6" class="st2"/>
+            </g>
+            <circle cx="25.2" cy="34.1" r="1.4" style="fill:#e42321"/>
+            <path d="M28.1 31.9c.4.6.7 1.4.7 2.2 0 .8-.2 1.6-.7 2.2m-5.8 0c-.4-.6-.7-1.4-.7-2.2 0-.8.2-1.6.7-2.2m8-1.4c.7 1 1.1 2.3 1.1 3.7 0 1.3-.4 2.6-1.1 3.6m-10.2 0c-.7-1-1.1-2.3-1.1-3.6 0-1.4.4-2.6 1.1-3.6" style="fill:none;stroke:#e42321;stroke-linecap:round;stroke-miterlimit:10"/>
+            <circle cx="34" cy="23.2" r="4.9" class="st2"/>
+            <circle cx="16.3" cy="23.2" r="4.9" class="st2"/>
+        </g>
+    </switch>
+</svg>

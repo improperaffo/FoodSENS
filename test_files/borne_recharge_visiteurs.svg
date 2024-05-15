@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Calque_1" x="0" y="0" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <style>
+        .st3{fill:#e42321;stroke:#e42321;stroke-width:1.7554;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}.st4{fill:#fff}
+    </style>
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <path id="polygon10_00000103972096308703731160000000239546135407919784_" d="M31.5 35.1 24 31.8v2.7h-5.4l7.6 3.4v-2.7h5.3z" style="fill:#e42321;stroke:#e42321;stroke-width:.3412;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+            <path id="polygon12_00000115511916896703469570000006264063448226720191_" d="m31.3 13 4.2 7.3v6.3H14.8v-6.3L19 13h12.3z" style="fill:none;stroke:#e42321;stroke-width:1.7554;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"/>
+            <path id="rect14_00000048467160514826893370000015279924725625528752_" d="M14.8 20.3h20.6v6.3H14.8v-6.3z" class="st3"/>
+            <path id="rect16_00000139980033731702014480000006516880093235122065_" d="M16.3 26.6h2.9V30h-2.9v-3.4z" class="st3"/>
+            <path id="rect18_00000018925352239706638540000003423775971194647714_" d="M31.1 26.6h2.7V30h-2.7v-3.4z" class="st3"/>
+            <circle id="circle20_00000090976798494033626780000003036030540821454745_" cx="18.3" cy="23.3" r="1.4" class="st4"/>
+            <circle id="circle22_00000004528398788134720510000017600560266772083384_" cx="32.1" cy="23.3" r="1.4" class="st4"/>
+        </g>
+    </switch>
+</svg>

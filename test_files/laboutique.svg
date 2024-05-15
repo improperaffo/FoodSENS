@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Calque_1" x="0" y="0" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <style>
+        .st1{fill:none;stroke:#e42022;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <path d="M25.1 33.2c0-1.5.7-2.2 2.2-2.2h4.5V20.6h-4.5c-1.5 0-2.2.7-2.2 2.2 0-1.5-.8-2.2-2.2-2.2h-4.5V31h4.5c1.5 0 2.2.7 2.2 2.2z" class="st1"/>
+            <path d="M31.9 22.1h1.5v10.4h-4.5c-1.5 0-2.6.7-2.6 2.2H24c0-1.5-1.1-2.2-2.6-2.2h-4.5V22.1h1.5m6.7.7v10" class="st1"/>
+            <path d="M33.8 17.7 25.1 14l-8.6 3.7" style="fill:none;stroke:#e42022;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"/>
+        </g>
+    </switch>
+</svg>

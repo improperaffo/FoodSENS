@@ -1,0 +1,73 @@
+{
+    "title": "Food choice for the enxt group meeting?",
+    "poll_options": [
+      {
+        "id": "B2ZBXVaAEnJ",
+        "type": "text",
+        "position": 0,
+        "vote_count": 0,
+        "max_votes": 0,
+        "description": "Choice 1",
+        "is_write_in": false,
+        "value": "Reactions"
+      },
+      {
+        "id": "B2ZBXVaAEnK",
+        "type": "text",
+        "position": 1,
+        "vote_count": 0,
+        "max_votes": 0,
+        "description": "Choice 2",
+        "is_write_in": false,
+        "value": "Reactions"
+      },
+      {
+        "id": "B2ZBXVaAEnL",
+        "type": "text",
+        "position": 2,
+        "vote_count": 0,
+        "max_votes": 0,
+        "description": "Choice 3",
+        "is_write_in": false,
+        "value": "Reactions"
+      },
+      {
+        "id": "B2ZBXVaAEnL",
+        "type": "text",
+        "position": 3,
+        "vote_count": 0,
+        "max_votes": 0,
+        "description": "I am not coming :(",
+        "is_write_in": false,
+        "value": "I am not coming :("
+      }
+    ],
+    "poll_config": {
+      "is_private": false,
+      "vote_type": "default",
+      "allow_comments": false,
+      "allow_indeterminate": false,
+      "allow_other_option": false,
+      "custom_design_colors": "{}",
+      "deadline_at": 1649671274,
+      "duplication_checking": "ip",
+      "allow_vpn_users": true,
+      "edit_vote_permissions": "admin",
+      "force_appearance": "auto",
+      "hide_participants": false,
+      "is_multiple_choice": true,
+      "multiple_choice_min": 1,
+      "multiple_choice_max": 1,
+      "number_of_winners": 1,
+      "randomize_options": false,
+      "require_voter_names": true,
+      "results_visibility": "always",
+      "use_custom_design": false
+    },
+    "poll_meta": {
+      "description": "Pick your food choice for the next group meeting.",
+      "location": "BC133",
+      "timezone": "Europe/Zurich"
+    },
+    "type": "multiple_choice"
+  }

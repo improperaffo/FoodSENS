@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <path d="M26.1 15.7h8v18h-8v-18zm-10 0h8v18h-8v-18z" style="fill:#e42022"/>
+            <path d="m18.1 24.7 5 4v-8l-5 4zm14 0-5 4v-8l5 4z" style="fill:#fff"/>
+        </g>
+    </switch>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Calque_1" x="0" y="0" style="enable-background:new 0 0 37 37" version="1.1" viewBox="0 0 37 37" width="37" height="37">
+    <style>
+        .st1{fill:none;stroke:#e42321;stroke-width:.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}
+    </style>
+    <switch transform="translate(-6.6 -6.2)">
+        <g>
+            <circle id="a_00000001634465149592076640000002003987205363364519_" cx="25.1" cy="24.7" r="18" style="fill:#fff;stroke:#979796"/>
+            <path d="M16.8 13h16.4v21.7H16.8z" class="st1"/>
+            <path d="M19.3 15.1h8.4v13.4h-8.4zm0 15h8.4v2.5h-8.4zm-.9 4.6h3.7v2.7h-3.7zm10 0h3.7v2.7h-3.7z" class="st1"/>
+            <path d="M27.7 16.8h5.4v6.7h-5.4zM29 26h2.5v2.5H29zm-9.7-6.4h8.4m-8.4 4.6h8.4" class="st1"/>
+            <path d="M29.5 19.5c.8 0 .8-1.2 0-1.2s-.8 1.2 0 1.2zm2 0c.8 0 .8-1.2 0-1.2s-.8 1.2 0 1.2zm-2 2c.8 0 .8-1.2 0-1.2s-.8 1.2 0 1.2zm2 0c.8 0 .8-1.2 0-1.2s-.8 1.2 0 1.2z" style="fill:#e42321"/>
+            <path d="M21.2 17.8c0-.3.3-.6.6-.6s.6.3.6.6v1.7h-1.2v-1.7m3 0c0-.3.3-.6.6-.6s.6.3.6.6v1.7h-1.2v-1.7m1 4.6c0-.3.3-.6.6-.6s.6.3.6.6v1.7h-1.2v-1.7m-2.9 0c0-.3.3-.6.6-.6s.6.3.6.6v1.7h-1.2v-1.7m-.1 4.4c0-.3.3-.6.6-.6s.6.3.6.6v1.7h-1.2v-1.7" class="st1"/>
+        </g>
+    </switch>
+</svg>
