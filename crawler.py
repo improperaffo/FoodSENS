@@ -96,6 +96,10 @@ loaded_data = json.loads(data)
 url = loaded_data["embed_url"]
 print(url)
 
+# Write the URL to a file
+with open("url.txt", "w") as file:
+    file.write(url)
+
 # Start Slack session
 client = WebClient(token=slack_token)
 

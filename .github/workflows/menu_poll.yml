@@ -22,3 +22,8 @@ jobs:
       env:
         STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+    - name: Upload URL
+      uses: actions/upload-artifact@v2
+      with:
+        name: url
+        path: url.txt
