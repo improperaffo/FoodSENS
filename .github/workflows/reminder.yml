@@ -1,8 +1,8 @@
 name: Weekly Reminder
 on:
-#   schedule:
-#     - cron: "0 11 * * 1"  # Every Monday at 11 am
-  push
+  schedule:
+    - cron: "0 11 * * 1"  # Every Monday at 11 am
+#   push
 jobs:
   reminder:
     runs-on: ubuntu-latest
@@ -15,12 +15,6 @@ jobs:
         python-version: 3.8 
     - name: Install dependencies
       run: pip install -r requirements.txt
-    - name: Download URL
-      uses: actions/download-artifact@v4
-    - name: Use URL
-      run: |
-        URL=$(cat url.txt)
-        echo "URL is $URL"
     - name: Run reminder script
       run: python3 reminder.py
       env:
