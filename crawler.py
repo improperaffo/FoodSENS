@@ -15,7 +15,7 @@ slack_token = os.getenv("SLACK_TOKEN")
 
 # Calculate the date of the next Wednesday
 today = datetime.date.today()
-days_ahead = (4 - today.weekday()) % 7
+days_ahead = (4 - today.weekday()) % 7 # Choose 2 for next Wednesday
 next_wednesday = today + datetime.timedelta(days=days_ahead)
 
 # Format the date in the required format
