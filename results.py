@@ -2,14 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 import os
-#from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import json
 import http.client
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
 # Load environment variables
-#load_dotenv("config.env")
+# load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
 

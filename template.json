@@ -34,6 +34,16 @@
       {
         "id": "B2ZBXVaAEnL",
         "type": "text",
+        "position": 2,
+        "vote_count": 0,
+        "max_votes": 0,
+        "description": "Choice 3",
+        "is_write_in": false,
+        "value": "Vegan bowl"
+      },
+      {
+        "id": "B2ZBXVaAEnL",
+        "type": "text",
         "position": 3,
         "vote_count": 0,
         "max_votes": 0,

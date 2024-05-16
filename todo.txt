@@ -1,6 +1,1 @@
-# Create script for getting the results
-
-# Save URL of poll in a file
-# Create cron
-# Add requirements version
-# Migrate to github
+# Add media on poll

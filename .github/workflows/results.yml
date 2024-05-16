@@ -1,7 +1,7 @@
 name: Give the results
 on:
   schedule:
-    - cron: '0 12 * * 1'
+    - cron: '0 10 * * 1' # 10:00 on Monday in UTC, which is 12:00 in CEST
 #   push
 jobs:
   build:

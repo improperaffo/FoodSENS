@@ -2,20 +2,20 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 import os
-#from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import json
 import http.client
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
 # Load environment variables
-#load_dotenv("config.env")
+# load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
 
 # Calculate the date of the next Wednesday
 today = datetime.date.today()
-days_ahead = (2 - today.weekday()) % 7
+days_ahead = (4 - today.weekday()) % 7
 next_wednesday = today + datetime.timedelta(days=days_ahead)
 
 # Format the date in the required format
@@ -51,9 +51,10 @@ with open('menu.txt', 'w') as f:
             if descr is not None:
                 new_values.append(descr.strip().replace('\n', ' '))
                 f.write(descr.replace('\n', ' ') + '\n')
+    f.write("Vegan bowl\n")
 
 # For each poll option, change the value
-for i, option in enumerate(data['poll_options'][:-1]):
+for i, option in enumerate(data['poll_options'][:-2]):
     option['value'] = new_values[i]
 
 # Calculate the date of the next Monday
