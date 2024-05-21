@@ -1,57 +1,6 @@
 {
-    "title": "Food choice for the enxt group meeting?",
-    "poll_options": [
-      {
-        "id": "B2ZBXVaAEnJ",
-        "type": "text",
-        "position": 0,
-        "vote_count": 0,
-        "max_votes": 0,
-        "description": "Choice 1",
-        "is_write_in": false,
-        "value": "Reactions"
-      },
-      {
-        "id": "B2ZBXVaAEnK",
-        "type": "text",
-        "position": 1,
-        "vote_count": 0,
-        "max_votes": 0,
-        "description": "Choice 2",
-        "is_write_in": false,
-        "value": "Reactions"
-      },
-      {
-        "id": "B2ZBXVaAEnL",
-        "type": "text",
-        "position": 2,
-        "vote_count": 0,
-        "max_votes": 0,
-        "description": "Choice 3",
-        "is_write_in": false,
-        "value": "Reactions"
-      },
-      {
-        "id": "B2ZBXVaAEnL",
-        "type": "text",
-        "position": 2,
-        "vote_count": 0,
-        "max_votes": 0,
-        "description": "Choice 3",
-        "is_write_in": false,
-        "value": "Vegan bowl"
-      },
-      {
-        "id": "B2ZBXVaAEnL",
-        "type": "text",
-        "position": 3,
-        "vote_count": 0,
-        "max_votes": 0,
-        "description": "I am not coming :(",
-        "is_write_in": false,
-        "value": "I am not coming :("
-      }
-    ],
+    "title": "Food choice for the next group meeting",
+    "poll_options": [],
     "poll_config": {
       "is_private": false,
       "vote_type": "default",

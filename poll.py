@@ -2,14 +2,14 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 import os
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 import json
 import http.client
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
 # Load environment variables
-# load_dotenv("config.env")
+load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
 
@@ -28,23 +28,21 @@ print("Looking for menu of "+date_str)
 with open('template.json', 'r') as f:
     data = json.load(f)
 
-# List of new values
-new_values = []
-
 # Read menu.txt and store every line in menu_items
 with open('menu.txt', 'r') as f:
     menu_items = f.readlines()
 
-for item in menu_items:
-    b_tag = item.find('b')
-    if b_tag is not None:
-        descr = b_tag.contents[0]
-        if descr is not None:
-            new_values.append(descr.strip().replace('\n', ' '))
-
-# For each poll option, change the value
-for i, option in enumerate(data['poll_options'][:-2]):
-    option['value'] = new_values[i]
+for i, item in enumerate(menu_items):
+    new_option = {
+    "type": "text",
+    "position": i,
+    "vote_count": 0,
+    "max_votes": 0,
+    "description": f"Choice {i}",
+    "is_write_in": False,
+    "value": item
+    }
+    data['poll_options'].append(new_option)
 
 # Calculate the date of the next Monday
 today = datetime.date.today()
@@ -62,7 +60,6 @@ deadline = int(next_monday_at_12.timestamp())
 
 # Update the deadline in the data
 data['poll_config']['deadline_at'] = deadline
-data['poll_meta']['description'] = f"For more information: {url}"
 
 conn = http.client.HTTPSConnection("api.strawpoll.com")
 
