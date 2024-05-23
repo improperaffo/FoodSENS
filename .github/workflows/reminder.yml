@@ -1,7 +1,7 @@
 name: Weekly Reminder
 on:
   schedule:
-    - cron: "0 9 * * 1"  # Every Monday at 11 am CEST
+    - cron: "0 8 * * 1"  # Every Monday at 10 am CEST
 #   push
 jobs:
   reminder:

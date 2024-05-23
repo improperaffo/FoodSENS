@@ -10,6 +10,7 @@ from slack_sdk.errors import SlackApiError
 #load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 # Calculate the date of the next Wednesday
 today = datetime.date.today()
@@ -90,7 +91,7 @@ client = WebClient(token=slack_token)
 
 try:
     response = client.chat_postMessage(
-        channel="generale",
+        channel=CHANNEL_ID,
         text="Make your food choice for the next group meeting: " + url
     )
 except SlackApiError as e:

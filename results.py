@@ -2,16 +2,17 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 import os
-# from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import json
 import http.client
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
 # Load environment variables
-# load_dotenv("config.env")
+#load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 # Open menu.txt and store the three lines
 with open('menu.txt', 'r') as f:
@@ -40,12 +41,21 @@ data = json.loads(data)
 # Start Slack session
 client = WebClient(token=slack_token)
 
-for i, option in enumerate(data['poll_options'][:-1]):
+try:
+    response = client.chat_postMessage(
+        channel="generale",
+        text="This week lunch choices are: "
+    )
+except SlackApiError as e:
+    # You will get a SlackApiError if "ok" is False
+    assert e.response["error"]
+
+for i, option in enumerate(data['poll_options']):
     description = lines[i].replace('\n', '').replace(',', '')
     try:
         response = client.chat_postMessage(
-            channel="generale",
-            text="Choice: " + description + ", Vote count: " + str(option['vote_count'])
+            channel=CHANNEL_ID,
+            text="Choice: " + description + ", *Vote count:* " + str(option['vote_count'])
         )
     except SlackApiError as e:
         # You will get a SlackApiError if "ok" is False

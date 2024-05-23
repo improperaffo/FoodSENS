@@ -6,6 +6,7 @@ from slack_sdk.errors import SlackApiError
 # Load environment variables
 # load_dotenv("config.env")
 slack_token = os.getenv("SLACK_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 # Start Slack session
 client = WebClient(token=slack_token)
@@ -16,8 +17,8 @@ with open('url.txt', 'r') as f:
 
 try:
     response = client.chat_postMessage(
-        channel="generale",
-        text=":warning: One hour left for chosing the food for next Wednesday! :warning: \n Link: " + url
+        channel=CHANNEL_ID,
+        text=":warning: Two hours left for chosing the food for next Wednesday! :warning: \n Link: " + url
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
