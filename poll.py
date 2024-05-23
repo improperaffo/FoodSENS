@@ -10,7 +10,10 @@ from slack_sdk.errors import SlackApiError
 #load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
-CHANNEL_ID = os.getenv("CHANNEL_ID")
+
+# Read channel ID from channel.txt
+with open('channel.txt', 'r') as f:
+    CHANNEL_ID = f.read().strip()
 
 # Calculate the date of the next Wednesday
 today = datetime.date.today()
@@ -97,4 +100,3 @@ try:
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
     assert e.response["error"]
-
