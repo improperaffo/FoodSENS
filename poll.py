@@ -55,7 +55,7 @@ next_monday = today + datetime.timedelta(days=days_ahead)
 next_monday = datetime.datetime.combine(next_monday, datetime.time())
 
 # Set the time to 12:00
-next_monday_at_12 = next_monday.replace(hour=12, minute=0, second=0)
+next_monday_at_12 = next_monday.replace(hour=10, minute=0, second=0)
 
 # Convert to a Unix timestamp
 deadline = int(next_monday_at_12.timestamp())

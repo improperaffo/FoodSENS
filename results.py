@@ -46,8 +46,8 @@ client = WebClient(token=slack_token)
 
 try:
     response = client.chat_postMessage(
-        channel="generale",
-        text="This week lunch choices are: "
+        channel=CHANNEL_ID,
+        text="This week lunch choices are :pizza: :burger: :poultry_leg: "
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
@@ -63,3 +63,12 @@ for i, option in enumerate(data['poll_options']):
     except SlackApiError as e:
         # You will get a SlackApiError if "ok" is False
         assert e.response["error"]
+
+total_votes = data['voteCount']
+try:
+    response = client.chat_postMessage(
+        channel=CHANNEL_ID,
+        text="Total choices: " + str(total_votes)
+    )
+except SlackApiError as e:  # You will get a SlackApiError if "ok" is False
+    assert e.response["error"]

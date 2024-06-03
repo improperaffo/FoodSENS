@@ -9,7 +9,7 @@
       "allow_other_option": false,
       "custom_design_colors": "{}",
       "deadline_at": 1649671274,
-      "duplication_checking": "ip",
+      "duplication_checking": "none",
       "allow_vpn_users": true,
       "edit_vote_permissions": "admin",
       "force_appearance": "auto",
