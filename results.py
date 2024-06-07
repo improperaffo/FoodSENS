@@ -41,6 +41,28 @@ data = res.read()
 
 data = json.loads(data)
 
+# Load list of vote options from lines
+vote_options = [line.replace('\n', '') for line in lines]
+
+# Go though all poll_participants, store their name and poll_votes
+participants = []
+for participant in data['poll_participants']:
+    name = participant['name']
+    votes = participant['poll_votes']
+    participants.append((name, votes))
+
+# Write the results to result.txt, for each vote_option, count the votes and print the names of who voted it. Every line should contain the vote_option, the number of votes and the names of the voters.
+# participant.votes are bitmaps, where the i-th bit is set if the participant voted for the i-th option
+with open('results.txt', 'w') as f:
+    for i, option in enumerate(vote_options):
+        votes = 0
+        voters = []
+        for j, participant in enumerate(participants):
+            if participant[1][i] == 1:
+                votes += 1
+                voters.append(participant[0])
+        f.write(f"Option: {option}, Voters: {', '.join(voters)}\n")
+
 # Start Slack session
 client = WebClient(token=slack_token)
 
@@ -64,11 +86,19 @@ for i, option in enumerate(data['poll_options']):
         # You will get a SlackApiError if "ok" is False
         assert e.response["error"]
 
-total_votes = data['voteCount']
+total_votes = data['vote_count']
 try:
     response = client.chat_postMessage(
         channel=CHANNEL_ID,
         text="Total choices: " + str(total_votes)
+    )
+except SlackApiError as e:  # You will get a SlackApiError if "ok" is False
+    assert e.response["error"]
+
+try:
+    response = client.chat_postMessage(
+        channel=CHANNEL_ID,
+        text="Detailed results: github.com/improperaffo/FoodSENS/blob/main/results.txt"
     )
 except SlackApiError as e:  # You will get a SlackApiError if "ok" is False
     assert e.response["error"]

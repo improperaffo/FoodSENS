@@ -11,12 +11,12 @@
       "deadline_at": 1649671274,
       "duplication_checking": "none",
       "allow_vpn_users": true,
-      "edit_vote_permissions": "admin",
+      "edit_vote_permissions": "voter",
       "force_appearance": "auto",
       "hide_participants": false,
       "is_multiple_choice": true,
-      "multiple_choice_min": 1,
-      "multiple_choice_max": 1,
+      "multiple_choice_min": 2,
+      "multiple_choice_max": 2,
       "number_of_winners": 1,
       "randomize_options": false,
       "require_voter_names": true,
@@ -24,7 +24,7 @@
       "use_custom_design": false
     },
     "poll_meta": {
-      "description": "Pick your food choice for the next group meeting.",
+      "description": "Select a main dish and a dessert.",
       "location": "BC133",
       "timezone": "Europe/Zurich"
     },

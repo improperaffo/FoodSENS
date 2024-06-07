@@ -54,8 +54,8 @@ next_monday = today + datetime.timedelta(days=days_ahead)
 # Convert the date to a datetime at the start of the day
 next_monday = datetime.datetime.combine(next_monday, datetime.time())
 
-# Set the time to 12:00
-next_monday_at_12 = next_monday.replace(hour=10, minute=0, second=0)
+# Set the time to 12:30
+next_monday_at_12 = next_monday.replace(hour=10, minute=30, second=0)
 
 # Convert to a Unix timestamp
 deadline = int(next_monday_at_12.timestamp())

@@ -22,3 +22,15 @@ jobs:
       env:
         STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      with:
+        name: results.txt
+        path: results.txt
+    - name: Commit and push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add results.txt
+        git commit -m "Add results"
+        git push
