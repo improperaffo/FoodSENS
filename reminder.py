@@ -31,6 +31,8 @@ headers = {
 poll_id = url.split("/")[-1]
 
 poll_url = f"/v3/polls/{poll_id}/results"
+print(poll_url)
+print(headers)
 conn.request("GET", poll_url, headers=headers)
 
 res = conn.getresponse()
