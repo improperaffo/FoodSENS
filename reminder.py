@@ -7,7 +7,7 @@ import http.client
 
 # Load environment variables
 #load_dotenv("config.env")
-strawPoll_token = "0b0e0c4c-12e0-11ef-a1ad-df2270717338"
+strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
 slack_token = os.getenv("SLACK_TOKEN")
 
 # Read channel ID from channel.txt

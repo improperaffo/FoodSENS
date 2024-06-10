@@ -11,7 +11,9 @@ from slack_sdk.errors import SlackApiError
 # Load environment variables
 #load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
+print(strawPoll_token)
 slack_token = os.getenv("SLACK_TOKEN")
+print(slack_token)
 
 # Read channel ID from channel.txt
 with open('channel.txt', 'r') as f:
