@@ -86,11 +86,11 @@ for i, option in enumerate(data['poll_options']):
         # You will get a SlackApiError if "ok" is False
         assert e.response["error"]
 
-total_votes = data['vote_count']
+total_participants = data['participant_count']
 try:
     response = client.chat_postMessage(
         channel=CHANNEL_ID,
-        text="Total choices: " + str(total_votes)
+        text="Total participants: " + str(total_participants)
     )
 except SlackApiError as e:  # You will get a SlackApiError if "ok" is False
     assert e.response["error"]
