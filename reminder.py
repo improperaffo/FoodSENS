@@ -8,6 +8,7 @@ import http.client
 # Load environment variables
 #load_dotenv("config.env")
 strawPoll_token = os.getenv("STRAW_POLL_TOKEN")
+print(strawPoll_token)
 slack_token = os.getenv("SLACK_TOKEN")
 
 # Read channel ID from channel.txt
@@ -31,8 +32,6 @@ headers = {
 poll_id = url.split("/")[-1]
 
 poll_url = f"/v3/polls/{poll_id}/results"
-print(poll_url)
-print(headers)
 conn.request("GET", poll_url, headers=headers)
 
 res = conn.getresponse()
