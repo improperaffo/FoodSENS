@@ -1,8 +1,8 @@
 name: Get the menu and create poll
 on:
-  # schedule:
-  #   - cron: '0 10 * * 5' # 10:00 on Friday in UTC, which is 12:00 in CEST
-  push 
+  schedule:
+    - cron: '0 8 * * 5' # 8:00 on Friday in UTC, which is 10:00 in CEST
+  # push 
 jobs:
   build:
     runs-on: ubuntu-latest

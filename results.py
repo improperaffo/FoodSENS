@@ -71,7 +71,7 @@ client = WebClient(token=slack_token)
 try:
     response = client.chat_postMessage(
         channel=CHANNEL_ID,
-        text="This week lunch choices are :pizza: :burger: :poultry_leg: "
+        text="This week lunch choices are :pizza: :hamburger: :poultry_leg: "
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
