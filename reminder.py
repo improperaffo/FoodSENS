@@ -48,7 +48,7 @@ try:
     # Send the reminder message to the Slack channel
     response = client.chat_postMessage(
         channel=CHANNEL_ID,
-        text=":warning: Two hours left for choosing the food for next Wednesday! :warning: \n\nParticipants who already voted: " + ", ".join(participants) + "\n\nLink: " + url
+        text=":warning: Two hours left for choosing the food for next Wednesday! :warning: \n\nParticipants who have already voted: " + ", ".join(participants) + "\n\nLink: " + url
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
