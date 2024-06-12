@@ -63,7 +63,7 @@ with open('results.txt', 'w') as f:
             if participant[1][i] == 1:
                 votes += 1
                 voters.append(participant[0])
-        f.write(f"Option: {option}, Voters: {', '.join(voters)}\n")
+        f.write(f"{option}: {', '.join(voters)}\n")
 
 # Start Slack session
 client = WebClient(token=slack_token)
