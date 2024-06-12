@@ -33,6 +33,9 @@ poll_id = url.split("/")[-1]
 poll_url = f"/v3/polls/{poll_id}/results"
 conn.request("GET", poll_url, headers=headers)
 
+# Remove https:// from the URL
+url = url[8:]
+
 res = conn.getresponse()
 data = res.read()
 
