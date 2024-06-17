@@ -25,8 +25,6 @@ headers = {
     'X-API-Key': strawPoll_token
 }
 
-print(headers)
-
 poll_id = url.split("/")[-1]
 
 poll_url = f"/v3/polls/{poll_id}/results"

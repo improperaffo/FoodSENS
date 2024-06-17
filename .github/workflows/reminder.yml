@@ -19,3 +19,4 @@ jobs:
       run: python3 reminder.py
       env:
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        STRAW_POLL_TOKEN: ${{ secrets.STRAW_POLL_TOKEN }}
