@@ -1,8 +1,8 @@
 name: Weekly Reminder
 on:
-  schedule:
-    - cron: "30 8 * * 1"  # Every Monday at 10:30 am CEST
-  # push
+  # schedule:
+  #   - cron: "30 8 * * 1"  # Every Monday at 10:30 am CEST
+  push
 jobs:
   reminder:
     runs-on: ubuntu-latest
