@@ -95,7 +95,7 @@ client = WebClient(token=slack_token)
 try:
     response = client.chat_postMessage(
         channel=CHANNEL_ID,
-        text="Make your food choice for the next group meeting: " + url
+        text="Make your food choice for the next group meeting: " + url[8:]
     )
 except SlackApiError as e:
     # You will get a SlackApiError if "ok" is False
