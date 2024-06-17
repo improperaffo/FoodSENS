@@ -14,9 +14,6 @@ slack_token = os.getenv("SLACK_TOKEN")
 with open('channel.txt', 'r') as f:
     CHANNEL_ID = f.read().strip()
 
-# Start Slack session
-client = WebClient(token=slack_token)
-
 # Read URL from url.txt
 with open('url.txt', 'r') as f:
     url = f.readline()
@@ -46,6 +43,9 @@ participants = []
 for participant in data['poll_participants']:
     name = participant['name']
     participants.append(name)
+
+# Start Slack session
+client = WebClient(token=slack_token)
 
 try:    
     # Send the reminder message to the Slack channel
