@@ -1,7 +1,7 @@
 name: Get the menu and create poll
 on:
   schedule:
-    - cron: '0 13 5 * 4' # 8:00 on Friday in UTC, which is 10:00 in CEST
+    - cron: '9 15 * * 4' # 8:00 on Friday in UTC, which is 10:00 in CEST
   # push 
 jobs:
   build:
